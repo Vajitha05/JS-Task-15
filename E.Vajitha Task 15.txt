@@ -1,0 +1,111 @@
+1.What is JavaScript? Write a simple script.
+
+Ans: JavaScript is a programming language used to make web pages interactive.
+It helps perform actions like showing messages, handling clicks, and updating content dynamically.
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple JS</title>
+</head>
+<body>
+
+<h2>Click the button</h2>
+
+<button onclick="showMessage()">Click Me</button>
+
+<script>
+function showMessage() {
+  alert("Hello! This is JavaScript");
+}
+</script>
+
+</body>
+</html>
+
+2.Add a script tag inside HTML and print 'Hello JS'.
+
+Ans:  <!DOCTYPE html>
+<html>
+<head>
+    <title>Hello JS Program</title>
+</head>
+<body>
+
+<script>
+document.write("Hello JS");
+</script>
+
+</body>
+</html>  
+
+3.Log your name and age in console.
+
+Ans:<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+console.log("Name: Vajitha");
+console.log("Age: 20");
+</script>
+
+</body>
+</html>
+
+4.Write single-line and multi-line comments.
+
+Ans:  <!DOCTYPE html>
+<html>
+<body>
+
+<script>
+var name = "Vajitha";
+var age = 20;
+
+console.log("Name: " + name);
+console.log("Age: " + age);
+</script>
+
+</body>
+</html>
+
+5.Integrate HTML with Javascript and display a body with a 'KKR' jersey color and a Box inside it with 'CSK' jersey color and apply the styles with your own creativity.
+
+Ans:  <!DOCTYPE html>
+<html>
+<head>
+    <title>KKR & CSK Box</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #4B0082; 
+        }
+        #cskBox {
+            width: 200px;
+            height: 200px;
+            background-color: #FFD700; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+
+<div id="cskBox">CSK</div>
+
+<script>
+document.getElementById('cskBox').innerText = "CSK Jersey";
+</script>
+
+</body>
+</html>
