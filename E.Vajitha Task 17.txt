@@ -1,0 +1,110 @@
+Task 1:
+
+a. Check if a number is positive or negative.
+
+b. Create a switch to print days of the week.
+
+Ans:  <!DOCTYPE html>
+<html>
+<head>
+  <title>Task 1</title>
+</head>
+<body>
+
+<h2>Task 1</h2>
+
+<script>
+  
+  let num = 10;
+
+  if (num > 0) {
+    document.write("Number is Positive<br>");
+  } else if (num < 0) {
+    document.write("Number is Negative<br>");
+  } else {
+    document.write("Number is Zero<br>");
+  }
+
+  // b. Switch for days of the week
+  let day = 3;
+
+  switch(day) {
+    case 1:
+      document.write("Monday");
+      break;
+    case 2:
+      document.write("Tuesday");
+      break;
+    case 3:
+      document.write("Wednesday");
+      break;
+    case 4:
+      document.write("Thursday");
+      break;
+    case 5:
+      document.write("Friday");
+      break;
+    case 6:
+      document.write("Saturday");
+      break;
+    case 7:
+      document.write("Sunday");
+      break;
+    default:
+      document.write("Invalid day");
+  }
+</script>
+
+</body>
+</html>
+
+Task 2:
+
+Story Line 1 - A Crew is travelling on a Boat. Totally 4 Members.
+
+a. Create a list of members inside a div. Give id to both list and div.
+
+Story Line 2 - Asking route to both Jack and Alice
+
+b. On clicking Jack button, display the route said by Jack.
+
+c. On clicking Alice button, display the route said by Alice
+
+Ans:  <!DOCTYPE html>
+<html>
+<head>
+  <title>Task 2</title>
+</head>
+<body>
+
+<h2>Crew Members</h2>
+
+
+<div id="crewDiv">
+  <ul id="crewList">
+    <li>Jack</li>
+    <li>Alice</li>
+    <li>Member 3</li>
+    <li>Member 4</li>
+  </ul>
+</div>
+
+<br>
+
+<button onclick="jackRoute()">Ask Jack</button>
+<button onclick="aliceRoute()">Ask Alice</button>
+
+<p id="result"></p>
+
+<script>
+    function jackRoute() {
+    document.getElementById("result").innerHTML = "Jack says: Go straight and turn left.";
+  }
+
+  function aliceRoute() {
+    document.getElementById("result").innerHTML = "Alice says: Go right and then straight.";
+  }
+</script>
+
+</body>
+</html>
